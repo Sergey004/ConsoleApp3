@@ -74,6 +74,7 @@ namespace ConsoleApp3
             --Masha.Health;
             Masha.Ammo += 100;
             Masha.Passport();
+            Console.Read();
         }
     }
 }
