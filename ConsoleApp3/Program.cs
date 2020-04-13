@@ -25,7 +25,7 @@ namespace ConsoleApp3
             this.ammo = ammo;
             this.name = name;
         }
-        public int Health
+        public int Health  //свойство Health связфнно с полем health
         {
             get
             {
@@ -37,7 +37,7 @@ namespace ConsoleApp3
                 else health = 0;
             }
         }
-        public int Ammo
+        public int Ammo  //свойство Ammo связфнно с полем ammo 
         {
             get
             {
@@ -49,7 +49,7 @@ namespace ConsoleApp3
                 else ammo = 0;
             }
         }
-        public string Name
+        public string Name //свойство Name связфнно с полем name 
         {
             get
             {
@@ -61,7 +61,7 @@ namespace ConsoleApp3
             Console.WriteLine("Monster {0} \t health = {1} ammo = {2}",
                 name, health, ammo);
         }
-        string name;
+        string name; //закрытые поля
         int health, ammo;
     }
 
@@ -72,8 +72,8 @@ namespace ConsoleApp3
             Monster Masha = new Monster(200, 200, "Masha");
             Masha.Passport();
             --Masha.Health;
-            Masha.Ammo += 100;
-            Masha.Passport();
+            Masha.Ammo += 100; //использования свойств
+            Masha.Passport(); //использования свойств
             Console.Read();
         }
     }
